@@ -3,8 +3,9 @@
 A standalone IoT system that measures environmental data (temperature & humidity) and displays it live on an OLED screen and in a web browser without internet or external cloud services. 
 When temperature reaches or exceeds 28°C, it automatically triggers a local alert: an LED turns on, the OLED shows Warm!, and the web page highlights the value in red. 
 Perfect for beginners who want to visualize sensor data locally over Wi-Fi while learning how IoT devices can act not just observe.
-Press the button to toggle between sensor readings (temperature/humidity) and network info (IP address + uptime). 
-The display switches instantly on press and returns to sensor mode when released.
+And has a button that does different things depending on how long you hold it short press shows "Button pressed!" on the display, 
+long press switches to an info screen with IP address and uptime. 
+No delay() used anywhere, everything runs on millis().
 
 | ![Setup](images/setup.jpg) | ![OLED](images/oled.jpg)
 
